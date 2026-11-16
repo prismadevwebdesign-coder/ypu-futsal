@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YPU Futsal | Projeto Social de Futsal do Bairro Ypú</title>
+  <meta name="description" content="Projeto Social de Futsal do Bairro Ypú: aulas e jogos gratuitos para meninas e meninos de 4 a 14 anos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Bebas+Neue&family=Fraunces:ital,opsz,wght@1,9..144,400;1,9..144,600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a href="#conteudo" class="pular">Pular para o conteúdo</a>
+
+  <!-- ===== CABEÇALHO ===== -->
+  <header class="header">
+    <div class="container header__conteudo">
+      <a href="#inicio" class="logo">
+        <img src="image/logo.jpg" alt="" width="56" height="56">
+        <span>YPU <b>FUTSAL</b></span>
+      </a>
+      <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="menu" class="menu" aria-label="Navegação principal">
+        <a href="#projeto">O projeto</a>
+        <a href="#ailton">Ailton</a>
+        <a href="#aulas">Aulas e jogos</a>
+        <a href="#fotos" data-requer="fotos" hidden>Fotos</a>
+        <a href="#local">Local</a>
+        <a href="#contato" class="menu__btn">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="inicio">
+      <picture>
+        <source media="(max-width: 768px)" srcset="image/hero-celular.webp">
+        <img class="hero__img" src="image/hero-desktop.webp" alt="Ailton com as crianças do projeto, todos uniformizados, em um campo de futebol" fetchpriority="high">
+      </picture>
+      <div class="hero__degrade"></div>
+      <div class="container hero__conteudo">
+        <span class="hero__tag anima" style="--d:.2s">Projeto Social de Futsal do Bairro Ypú</span>
+        <h1 class="anima" style="--d:.35s">Mais que <span class="amarelo">futebol</span>,<br>oportunidades para <span class="azul">crescer.</span></h1>
+        <p class="hero__rotativo anima" style="--d:.5s">Aqui se joga com <span class="palavra">respeito</span></p>
+        <div class="hero__botoes anima" style="--d:.65s">
+          <a href="#fotos" class="btn btn--amarelo" data-requer="fotos" hidden>Ver fotos da semana</a>
+          <a href="#projeto" class="btn btn--vazado">Conheça o projeto</a>
+        </div>
+      </div>
+      <a href="#projeto" class="hero__scroll" aria-label="Rolar para o projeto"><span></span></a>
+    </section>
+
+   <!-- ===== O PROJETO ===== -->
+<section class="secao projeto" id="projeto">
+  <div class="container projeto__grid">
+    <div class="projeto__titulo revela">
+      <span class="secao__sobre">O projeto</span>
+      <h2 class="secao__titulo">Uma quadra onde todo mundo <span class="traco">tem lugar</span></h2>
+      <p class="projeto__intro">Futsal no bairro, perto de casa, para quem já joga e para quem nunca chutou uma bola.</p>
+      <blockquote>Cada criança entra em quadra do seu jeito, e todas são bem-vindas.</blockquote>
+    </div>
+    <div class="projeto__texto revela" style="--d:.15s">
+      <p>Uma bola em quadra nunca é só uma bola. É um convite para correr junto, aprender com o outro e viver a alegria de fazer parte de um time.</p>
+      <p>É com esse espírito que o Projeto Social de Futsal do Bairro Ypú abre a quadra, <strong>de forma gratuita</strong>, para <strong>meninas e meninos de 4 a 14 anos</strong>.</p>
+      <p>Aqui ninguém precisa chegar sabendo. Cada criança aprende no seu ritmo, ganha confiança a cada treino e descobre que o jogo fica melhor quando todos participam.</p>
+    </div>
+  </div>
+
+  <figure class="container projeto__foto revela">
+    <img src="image/em-quadra.webp" alt="Meninas e meninos jogando futsal em quadra, usando coletes" loading="lazy">
+    <figcaption>Treino na quadra, com meninas e meninos jogando juntos.</figcaption>
+  </figure>
+
+  <div class="container valores">
+    <div class="secao__cabeca revela">
+      <span class="secao__sobre">Além do placar</span>
+      <h2 class="secao__titulo">O que se aprende em quadra</h2>
+    </div>
+    <ul class="valores__lista" role="list">
+      <li class="valor revela"><span class="valor__num">01</span><h3>Respeito</h3><p>Pelo colega, pelo adversário, pelo professor e pelas regras do jogo.</p></li>
+      <li class="valor revela" style="--d:.1s"><span class="valor__num">02</span><h3>Trabalho em equipe</h3><p>Ninguém vence sozinho. O passe certo vale tanto quanto o gol.</p></li>
+      <li class="valor revela" style="--d:.2s"><span class="valor__num">03</span><h3>Disciplina</h3><p>Chegar no horário, ouvir, tentar de novo. Hábitos que servem para a vida.</p></li>
+      <li class="valor revela" style="--d:.3s"><span class="valor__num">04</span><h3>Amizade</h3><p>Crianças de vários bairros que se encontram e criam laços.</p></li>
+    </ul>
+  </div>
+
+  <div class="faixa" aria-label="Bairros participantes: Ypú, Perissê, Centro, Paissandu, Catarcione e Conselheiro">
+    <div class="faixa__trilho" aria-hidden="true">
+      <span>Ypú</span><span>Perissê</span><span>Centro</span><span>Paissandu</span><span>Catarcione</span><span>Conselheiro</span>
+      <span>Ypú</span><span>Perissê</span><span>Centro</span><span>Paissandu</span><span>Catarcione</span><span>Conselheiro</span>
+      <span>Ypú</span><span>Perissê</span><span>Centro</span><span>Paissandu</span><span>Catarcione</span><span>Conselheiro</span>
+      <span>Ypú</span><span>Perissê</span><span>Centro</span><span>Paissandu</span><span>Catarcione</span><span>Conselheiro</span>
+    </div>
+  </div>
+</section>
+
+    <!-- ===== AILTON ===== -->
+    <section class="secao ailton" id="ailton">
+      <div class="container ailton__grid">
+        <div class="ailton__fotos revela">
+          <figure class="ailton__antiga">
+            <img src="image/ailton-friburguense.webp" alt="Foto antiga do time do Friburguense posado em campo, com torcida na arquibancada" loading="lazy">
+            <figcaption>Tempos de Friburguense</figcaption>
+          </figure>
+          <figure class="ailton__hoje">
+            <img src="image/ailton-hoje.webp" alt="Ailton distribuindo lembranças para as crianças na quadra" loading="lazy">
+          </figure>
+        </div>
+        <div class="ailton__texto revela" style="--d:.15s">
+          <span class="secao__sobre">Quem está à frente</span>
+          <h2 class="secao__titulo">Ailton Souza</h2>
+          <p class="ailton__destaque">Ex-atleta profissional do Friburguense.</p>
+          <p>Ailton conhece o futebol de dentro do campo: a rotina de treinos, a pressão dos jogos e a força de um grupo unido. Sabe que a bola ensina muito além da técnica.</p>
+          <p>Hoje, leva essa experiência para a quadra do Ypú como responsável pelo projeto. Conduz as aulas e os jogos, acompanha cada criança de perto e recebe as famílias com a mesma dedicação que tinha em campo.</p>
+          <blockquote>O que o futebol me deu, quero devolver para as crianças do bairro.</blockquote>
+          <div class="ailton__links">
+            <a href="https://wa.me/5522998964929" target="_blank" rel="noopener" class="btn btn--azul">Conversar no WhatsApp</a>
+            <a href="https://www.instagram.com/ailtonsouzasouza/" target="_blank" rel="noopener" class="link-seta">Instagram <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AULAS E JOGOS ===== -->
+    <section class="secao aulas" id="aulas">
+      <div class="container">
+        <div class="secao__cabeca revela">
+          <span class="secao__sobre secao__sobre--claro">Atividades</span>
+          <h2 class="secao__titulo">Aulas e jogos</h2>
+          <p>As atividades se dividem entre aprender e colocar em prática, sempre com orientação e num ambiente seguro.</p>
+        </div>
+        <div class="aulas__cards">
+          <article class="card revela">
+            <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="m12 7 4 3-1.5 5h-5L8 10z"/></svg>
+            <span class="card__num">01</span>
+            <h3>Aulas</h3>
+            <p>Momentos para conhecer o futsal e praticar os fundamentos: passe, domínio, condução e finalização. Cada exercício respeita a idade e o ritmo da criança.</p>
+          </article>
+          <article class="card revela" style="--d:.15s">
+            <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <span class="card__num">02</span>
+            <h3>Jogos</h3>
+            <p>Hora de reunir o time e colocar em prática o que foi aprendido. Em quadra, as crianças aprendem a ganhar, a perder e a jogar limpo.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOTOS DA SEMANA (condicional) ===== -->
+    <section class="secao fotos" id="fotos" hidden>
+      <div class="container">
+        <div class="secao__cabeca revela">
+          <span class="secao__sobre">Galeria</span>
+          <h2 class="secao__titulo">Fotos da semana</h2>
+          <p class="fotos__semana" hidden></p>
+        </div>
+        <ul class="fotos__grade" role="list"></ul>
+      </div>
+      <dialog class="visor" aria-label="Foto ampliada">
+        <button class="visor__fechar" aria-label="Fechar">✕</button>
+        <button class="visor__nav visor__nav--ant" aria-label="Foto anterior">‹</button>
+        <figure><img src="" alt=""><figcaption></figcaption></figure>
+        <button class="visor__nav visor__nav--prox" aria-label="Próxima foto">›</button>
+      </dialog>
+    </section>
+
+    <!-- ===== EVENTOS (condicional) ===== -->
+    <section class="secao eventos" id="eventos" hidden>
+      <div class="container">
+        <div class="secao__cabeca revela">
+          <span class="secao__sobre">Agenda</span>
+          <h2 class="secao__titulo">Eventos e competições</h2>
+        </div>
+        <div class="eventos__lista"></div>
+      </div>
+    </section>
+
+    <!-- ===== PARTICIPAÇÃO ===== -->
+    <section class="secao participa">
+      <div class="container">
+        <ul class="participa__fatos" role="list">
+          <li class="fato revela"><strong>Gratuito</strong><span>Participação sem custo</span></li>
+          <li class="fato revela" style="--d:.1s"><strong>4 a 14 anos</strong><span>Faixa etária atendida</span></li>
+          <li class="fato revela" style="--d:.2s"><strong>Meninas e meninos</strong><span>Todos são bem-vindos</span></li>
+        </ul>
+        <p class="participa__como revela">Quer que seu filho ou sua filha participe? Fale com o Ailton pelo WhatsApp para saber os dias, os horários e como fazer parte.</p>
+      </div>
+    </section>
+
+    <!-- ===== LOCAL ===== -->
+    <section class="secao local" id="local">
+      <div class="container local__card revela">
+        <svg class="icone icone--grande" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        <div>
+          <span class="secao__sobre">Onde acontece</span>
+          <h2 class="secao__titulo">Quadra de esportes da Rua Mac Nivem</h2>
+          <p class="local__texto">No coração de Ypú, em Nova Friburgo. Uma quadra do bairro, de portas abertas para as crianças.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="secao contato" id="contato">
+      <div class="container">
+        <div class="secao__cabeca revela">
+          <span class="secao__sobre secao__sobre--claro">Contato</span>
+          <h2 class="secao__titulo">Fale com o projeto</h2>
+          <p>Dúvidas sobre as aulas, os jogos ou o projeto? Escolha o canal que preferir.</p>
+        </div>
+        <div class="contato__grid">
+          <a class="canal revela" href="https://wa.me/5522998964929" target="_blank" rel="noopener">
+            <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+            <span class="canal__nome">WhatsApp</span>
+            <span class="canal__dado">(22) 99896-4929</span>
+          </a>
+          <a class="canal revela" style="--d:.1s" href="mailto:ailtonsouza.escolinha@gmail.com">
+            <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            <span class="canal__nome">E-mail</span>
+            <span class="canal__dado">ailtonsouza.escolinha@gmail.com</span>
+          </a>
+          <a class="canal revela" style="--d:.2s" href="https://www.instagram.com/ailtonsouzasouza/" target="_blank" rel="noopener">
+            <svg class="icone" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></svg>
+            <span class="canal__nome">Instagram</span>
+            <span class="canal__dado">@ailtonsouzasouza</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== RODAPÉ ===== -->
+  <footer class="rodape">
+    <div class="container rodape__conteudo">
+      <div class="rodape__marca">
+        <img src="image/logo.jpg" alt="" width="52" height="52" loading="lazy">
+        <div>
+          <strong>YPU <b>FUTSAL</b></strong>
+          <span>Projeto Social de Futsal do Bairro Ypú</span>
+        </div>
+      </div>
+      <nav class="rodape__links" aria-label="Links do rodapé">
+        <a href="#projeto">O projeto</a>
+        <a href="#ailton">Ailton</a>
+        <a href="#aulas">Aulas e jogos</a>
+        <a href="#fotos" data-requer="fotos" hidden>Fotos</a>
+        <a href="#local">Local</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLUTUANTE ===== -->
+  <a href="https://wa.me/5522998964929" target="_blank" rel="noopener" class="zap" aria-label="Fale com o Ailton pelo WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+    <span class="zap__texto"><small>Dúvidas?</small>Fale com o Ailton</span>
+  </a>
+
+  <script src="dados.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
