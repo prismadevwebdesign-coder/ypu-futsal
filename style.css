@@ -284,7 +284,8 @@ blockquote { font-family: var(--f-destaque); font-style: italic; font-weight: 40
   blockquote { font-size: 1.3rem; }
 
   .ailton__grid { grid-template-columns: 1fr; gap: 40px; }
-  .ailton__fotos { padding: 0 24px 60px 0; }
+  .ailton__texto { order: 1; }
+  .ailton__fotos { order: 2; padding: 0 24px 60px 0; }
   .ailton__hoje { width: 45%; }
 
   .aulas__cards, .contato__grid { grid-template-columns: 1fr; }
