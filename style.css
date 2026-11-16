@@ -283,9 +283,12 @@ blockquote { font-family: var(--f-destaque); font-style: italic; font-weight: 40
   .faixa__trilho span:nth-child(even) { font-size: 1.8rem; }
   blockquote { font-size: 1.3rem; }
 
-  .ailton__grid { grid-template-columns: 1fr; gap: 40px; }
-  .ailton__texto { order: 1; }
-  .ailton__fotos { order: 2; padding: 0 24px 60px 0; }
+    .ailton__grid { grid-template-columns: 1fr; gap: 0; }
+  .ailton__texto { display: contents; }
+  .ailton__texto > * { order: 4; }
+  .ailton__texto .secao__sobre { order: 1; }
+  .ailton__texto .secao__titulo { order: 2; }
+  .ailton__fotos { order: 3; padding: 0 24px 60px 0; margin: 8px 0 36px; }
   .ailton__hoje { width: 45%; }
 
   .aulas__cards, .contato__grid { grid-template-columns: 1fr; }
